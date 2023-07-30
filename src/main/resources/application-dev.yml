@@ -1,0 +1,13 @@
+###springboot 多数据源配置，自定义配置文件，不使用springboot 的默认数据源
+source:
+  jdbc-url: jdbc:mysql://127.0.0.1:3306/db_source?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+  driver-class-name: com.mysql.cj.jdbc.Driver
+target:
+  jdbc-url: jdbc:mysql://127.0.0.1:3306/db_target?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+  driver-class-name: com.mysql.cj.jdbc.Driver
+###开发环境下开启debug
+debug: true

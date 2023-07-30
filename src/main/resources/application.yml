@@ -1,0 +1,13 @@
+server:
+  port: 8096
+spring:
+  profiles:
+    active: dev
+  batch:
+    job:
+      enabled: false
+migrate:
+  config:
+    pageSize: 10000
+    chunkSize: 1000
+    threadSize: 4
